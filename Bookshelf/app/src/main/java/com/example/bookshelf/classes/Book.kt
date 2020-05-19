@@ -44,7 +44,6 @@ class Book(ISBN: String,title: String,author: String,editorial: String,cover: St
     @ColumnInfo(name = "topic")
     var topic : String = ""
 
-
     @ColumnInfo(name = "pages")
     var pages: Int = 0
 

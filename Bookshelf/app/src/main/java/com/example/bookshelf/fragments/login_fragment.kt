@@ -97,7 +97,7 @@ class login_fragment : Fragment() {
                 }
                 else {
                     val login_error : String = consts.get_login_error_msg()
-                    Snackbar.make(fragment_login_fragment, login_error, Snackbar.LENGTH_SHORT).show()
+                    Snackbar.make(v, login_error, Snackbar.LENGTH_SHORT).show()
                 }
 
             }

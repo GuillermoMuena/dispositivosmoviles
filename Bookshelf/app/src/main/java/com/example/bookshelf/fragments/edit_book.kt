@@ -96,8 +96,8 @@ class edit_book : Fragment() {
                     cover_edit.text.toString(),
                     pages_edit.text.toString().toInt(),
                     year_edit.text.toString().toInt(),
-                    review_edit.toString(),
-                    topic_edit.toString())
+                    review_edit.text.toString(),
+                    topic_edit.text.toString())
                 viewModel.books.value = new
 
                 val action = edit_bookDirections.actionEditBookToListFragment()

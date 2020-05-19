@@ -72,15 +72,18 @@ class new_book : Fragment() {
     override fun onStart() {
         super.onStart()
         btn_add.setOnClickListener {
+            var pages = pages_edit.text.toString().toIntOrNull() ?: 0
+            var year = year_edit.text.toString().toIntOrNull() ?: 1900
+
             var new : Book = Book(ISBN_edit.text.toString(),
                                   title_edit.text.toString(),
                                   author_edit.text.toString(),
                                   editorial_edit.text.toString(),
                                   cover_edit.text.toString(),
-                                  pages_edit.text.toString().toInt(),
-                                  year_edit.text.toString().toInt(),
-                                  review_edit.toString(),
-                                  topic_edit.toString())
+                                  pages,
+                                  year,
+                                  review_edit.text.toString(),
+                                  topic_edit.text.toString())
             viewModel.books.value = new
 
             val action = new_bookDirections.actionNewBookToListFragment()

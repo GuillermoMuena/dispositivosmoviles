@@ -43,10 +43,10 @@ class tab_complex : Fragment() {
 
         viewModel.books.observe(viewLifecycleOwner, Observer { result ->
             editorial.text = result.editorial
-            anno.text = result.year.toString()
-            pages.text = result.pages.toString()
             theme.text = result.topic
             ISBN.text = result.ISBN
+            anno.text = result.year.toString()
+            pages.text = result.pages.toString()
         })
 
        return v

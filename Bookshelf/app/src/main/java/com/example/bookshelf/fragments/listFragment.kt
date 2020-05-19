@@ -82,7 +82,6 @@ class listFragment : Fragment() {
 
         viewModel = ViewModelProvider(requireActivity()).get(bookViewModel::class.java)
         viewModel.books.observe(viewLifecycleOwner, Observer { result ->
-
             book_dao?.insertBook(Book(result.ISBN, result.title, result.author, result.editorial, result.cover, result.pages, result.year, result.review, result.topic))
         })
         listBooks.clear()
