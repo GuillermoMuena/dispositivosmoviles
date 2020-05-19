@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bookshelf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_es">Título</string>
+    <string name="author_es">Autor</string>
+    <string name="editorial_es">Editorial</string>
+    <string name="cover_es">Tapa</string>
+    <string name="pages_es">Páginas</string>
+    <string name="year_es">Año</string>
+    <string name="topic_es">Tema</string>
+    <string name="ISBN_es">ISBN</string>
+    <string name="review_es">Opinion</string>
+
+    <string name="title_en">Title</string>
+    <string name="author_en">Author</string>
+    <string name="editorial_en">Editorial</string>
+    <string name="cover_en">Cover</string>
+    <string name="pages_en">Pages</string>
+    <string name="year_en">Year</string>
+    <string name="topic_en">Topic</string>
+    <string name="ISBN_en">ISBN</string>
+    <string name="review_en">Opinion</string>
+</resources>
